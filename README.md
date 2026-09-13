@@ -148,6 +148,25 @@ When `--onnx` is omitted, the command downloads `kokoro_vi.onnx` from the
 Hugging Face model repo. Install `onnxruntime-gpu` and pass `--device cuda` to
 use CUDAExecutionProvider when available.
 
+## Telegram Bot
+
+Bạn có thể chạy Telegram Bot để tạo giọng đọc tiếng Việt:
+
+1. Đặt API Token của bạn vào biến môi trường hoặc sửa trực tiếp trong file `bot.py`:
+   ```bash
+   export TELEGRAM_BOT_TOKEN="your_telegram_bot_token"
+   ```
+2. Khởi chạy Bot:
+   ```bash
+   python bot.py
+   ```
+
+Bot hỗ trợ:
+- Gửi tin nhắn tiếng Việt -> nhận lại tin nhắn thoại (Voice note) âm thanh tự nhiên.
+- `/voices`: Danh sách 14 giọng đọc tiếng Việt.
+- `/voice <mã_giọng>`: Đổi giọng đọc cá nhân (ví dụ: `/voice hung_thinh`).
+- Xử lý non-blocking & hàng đợi chống treo CPU máy chủ.
+
 ## Gradio
 
 ```bash

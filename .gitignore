@@ -29,3 +29,10 @@ voices/*.pt
 *.voicepack.pt
 docs/WORKLOG.md
 docs/superpowers/
+
+# Virtual environment
+venv/
+
+# Generated sample voices
+sample_voices/
+
