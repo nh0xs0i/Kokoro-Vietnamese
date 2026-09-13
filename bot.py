@@ -32,7 +32,7 @@ from kokoro_vietnamese import KokoroVietnamese, VOICES, list_voices
 # ---------------------------------------------------------
 # CẤU HÌNH (CONFIGURATION)
 # ---------------------------------------------------------
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8389471597:AAGn82h8NC-vEkCBG7uYK3hHFP7-vVAuhxc")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 
 # Thư mục gốc chứa model và voicepacks
 BASE_DIR = Path(__file__).resolve().parent
